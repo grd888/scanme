@@ -29,8 +29,8 @@ extension UIColor {
               }
         
         self.init(red: CGFloat(redValue) / 255.0,
-                       green: CGFloat(greenValue)/255.0,
-                       blue: CGFloat(blueValue)/255.0,
-                       alpha: 1.0)
+                  green: CGFloat(greenValue)/255.0,
+                  blue: CGFloat(blueValue)/255.0,
+                  alpha: 1.0)
     }
 }

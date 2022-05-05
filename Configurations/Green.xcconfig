@@ -1,0 +1,11 @@
+//
+//  Green.xcconfig
+//  ScanMe
+//
+//  Created by Greg Delgado III on 5/5/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+COLOR_THEME = green
