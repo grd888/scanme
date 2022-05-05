@@ -22,6 +22,7 @@ class ScanMeViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     
     var appSettings: AppSettings = AppSettings.instance
+    var viewModel: ScanMeViewModel = ScanMeViewModel(imageService: <#ImageGetter#>)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,10 @@ class ScanMeViewController: UIViewController {
         let primaryColor = UIColor(hex: appSettings.theme.primaryColor)
         resultsView.backgroundColor = primaryColor
         addButton.backgroundColor = primaryColor
+    }
+    
+    @IBAction func handleAddInput(_ sender: Any) {
+        viewModel.getInputImage()
     }
 }
 

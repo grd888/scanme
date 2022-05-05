@@ -17,6 +17,9 @@
 		9D45A0792823392200E45744 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
 		9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
+		9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
+		9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
+		9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		9D45A07D2823501C00E45744 /* Red.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Red.xcconfig; sourceTree = "<group>"; };
 		9D45A07E2823503200E45744 /* Green.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Green.xcconfig; sourceTree = "<group>"; };
 		9D45A0852823560F00E45744 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewModel.swift; sourceTree = "<group>"; };
+		9D45A08C2823DCDC00E45744 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		9D45A08E2823DCF400E45744 /* ImageGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGetter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,16 +93,11 @@
 		9D45A0472822A21000E45744 /* ScanMe */ = {
 			isa = PBXGroup;
 			children = (
-				9D45A0482822A21000E45744 /* AppDelegate.swift */,
-				9D45A04A2822A21000E45744 /* SceneDelegate.swift */,
+				9D45A08B2823DCB600E45744 /* ImageService */,
+				9D45A0872823DAF900E45744 /* Core */,
 				9D45A04C2822A21000E45744 /* ScanMeViewController.swift */,
-				9D45A04E2822A21000E45744 /* Main.storyboard */,
-				9D45A0512822A21100E45744 /* Assets.xcassets */,
-				9D45A0532822A21100E45744 /* LaunchScreen.storyboard */,
+				9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */,
 				9D45A0562822A21100E45744 /* Info.plist */,
-				9D45A0782823392200E45744 /* AppSettings.swift */,
-				9D45A07A2823403100E45744 /* UIColor+Hex.swift */,
-				9D45A0852823560F00E45744 /* Bundle+Extension.swift */,
 			);
 			path = ScanMe;
 			sourceTree = "<group>";
@@ -116,6 +117,38 @@
 				9D45A07E2823503200E45744 /* Green.xcconfig */,
 			);
 			path = Configurations;
+			sourceTree = "<group>";
+		};
+		9D45A0872823DAF900E45744 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A0882823DB2A00E45744 /* Extensions */,
+				9D45A0482822A21000E45744 /* AppDelegate.swift */,
+				9D45A04A2822A21000E45744 /* SceneDelegate.swift */,
+				9D45A04E2822A21000E45744 /* Main.storyboard */,
+				9D45A0512822A21100E45744 /* Assets.xcassets */,
+				9D45A0532822A21100E45744 /* LaunchScreen.storyboard */,
+				9D45A0782823392200E45744 /* AppSettings.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D45A0882823DB2A00E45744 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A07A2823403100E45744 /* UIColor+Hex.swift */,
+				9D45A0852823560F00E45744 /* Bundle+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D45A08B2823DCB600E45744 /* ImageService */ = {
+			isa = PBXGroup;
+			children = (
+				9D45A08C2823DCDC00E45744 /* ImageService.swift */,
+				9D45A08E2823DCF400E45744 /* ImageGetter.swift */,
+			);
+			path = ImageService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +253,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D45A04D2822A21000E45744 /* ScanMeViewController.swift in Sources */,
+				9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */,
 				9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */,
 				9D45A0492822A21000E45744 /* AppDelegate.swift in Sources */,
 				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
+				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
+				9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
