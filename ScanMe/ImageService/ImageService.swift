@@ -10,12 +10,6 @@ import Combine
 
 class ImageService: ImageGetter {
     func getImage() -> Future<UIImage, ImageGetterError> {
-        return Future { promise in
-            if let image = UIImage(systemName: "pin") {
-                promise(.success(image))
-            } else {
-                promise(.failure(.fetchError))
-            }
-        }
+        return CameraRollService().getImage()
     }
 }

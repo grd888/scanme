@@ -21,6 +21,9 @@
 		9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
 		9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 		9D45A0922823FE3D00E45744 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
+		9D45A0942824011800E45744 /* CameraRollService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0932824011800E45744 /* CameraRollService.swift */; };
+		9D45A096282401CE00E45744 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A095282401CE00E45744 /* CameraService.swift */; };
+		9D45A0982824020700E45744 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0972824020700E45744 /* FileSystemService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		9D45A08C2823DCDC00E45744 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		9D45A08E2823DCF400E45744 /* ImageGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGetter.swift; sourceTree = "<group>"; };
 		9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeComposer.swift; sourceTree = "<group>"; };
+		9D45A0932824011800E45744 /* CameraRollService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollService.swift; sourceTree = "<group>"; };
+		9D45A095282401CE00E45744 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		9D45A0972824020700E45744 /* FileSystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				9D45A08C2823DCDC00E45744 /* ImageService.swift */,
+				9D45A0932824011800E45744 /* CameraRollService.swift */,
+				9D45A095282401CE00E45744 /* CameraService.swift */,
+				9D45A0972824020700E45744 /* FileSystemService.swift */,
 				9D45A08E2823DCF400E45744 /* ImageGetter.swift */,
 			);
 			path = ImageService;
@@ -263,13 +272,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D45A0942824011800E45744 /* CameraRollService.swift in Sources */,
 				9D45A0922823FE3D00E45744 /* ScanMeComposer.swift in Sources */,
+				9D45A0982824020700E45744 /* FileSystemService.swift in Sources */,
 				9D45A04D2822A21000E45744 /* ScanMeViewController.swift in Sources */,
 				9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */,
 				9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */,
 				9D45A0492822A21000E45744 /* AppDelegate.swift in Sources */,
 				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
+				9D45A096282401CE00E45744 /* CameraService.swift in Sources */,
 				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
 				9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
