@@ -22,7 +22,7 @@ class ScanMeViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     
     var appSettings: AppSettings = AppSettings.instance
-    var viewModel: ScanMeViewModel = ScanMeViewModel(imageService: <#ImageGetter#>)
+    var viewModel: ScanMeViewModel = ScanMeViewModel(imageService: ImageService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
