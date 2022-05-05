@@ -14,6 +14,8 @@
 		9D45A0522822A21100E45744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0512822A21100E45744 /* Assets.xcassets */; };
 		9D45A0552822A21100E45744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
 		9D45A0602822A21200E45744 /* ScanMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A05F2822A21200E45744 /* ScanMeTests.swift */; };
+		9D45A0792823392200E45744 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
+		9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		9D45A0562822A21100E45744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D45A05B2822A21200E45744 /* ScanMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45A05F2822A21200E45744 /* ScanMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeTests.swift; sourceTree = "<group>"; };
+		9D45A0782823392200E45744 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		9D45A07A2823403100E45744 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				9D45A0512822A21100E45744 /* Assets.xcassets */,
 				9D45A0532822A21100E45744 /* LaunchScreen.storyboard */,
 				9D45A0562822A21100E45744 /* Info.plist */,
+				9D45A0782823392200E45744 /* AppSettings.swift */,
+				9D45A07A2823403100E45744 /* UIColor+Hex.swift */,
 			);
 			path = ScanMe;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 			files = (
 				9D45A04D2822A21000E45744 /* ScanMeViewController.swift in Sources */,
 				9D45A0492822A21000E45744 /* AppDelegate.swift in Sources */,
+				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
+				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

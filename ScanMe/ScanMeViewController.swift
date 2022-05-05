@@ -9,11 +9,30 @@ import UIKit
 
 class ScanMeViewController: UIViewController {
 
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var resultsView: UIView!
+    @IBOutlet weak var inputTitleLabel: UILabel!
+    @IBOutlet weak var inputValueLabel: UILabel!
+    @IBOutlet weak var resultTitleLabel: UILabel!
+    @IBOutlet weak var resultValueLabel: UILabel!
+    
+    @IBOutlet weak var inputImageView: UIImageView!
+    
+    @IBOutlet weak var addButton: UIButton!
+    
+    var appSettings: AppSettings = AppSettings.instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        setupTheme()
     }
 
-
+    private func setupTheme() {
+        let primaryColor = UIColor(hex: appSettings.theme.primaryColor)
+        resultsView.backgroundColor = primaryColor
+        addButton.backgroundColor = primaryColor
+    }
 }
 
