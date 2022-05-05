@@ -11,7 +11,7 @@ import Combine
 class FileSystemService: ImageGetter {
     func getImage() -> Future<UIImage, ImageGetterError> {
         return Future { promise in
-            if let image = UIImage(systemName: "file") {
+            if let image = UIImage(systemName: "star") {
                 promise(.success(image))
             } else {
                 promise(.failure(.fetchError))

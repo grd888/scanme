@@ -9,3 +9,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 COLOR_THEME = green
+IMAGE_SOURCE = fileSystem

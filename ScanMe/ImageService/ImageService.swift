@@ -10,6 +10,16 @@ import Combine
 
 class ImageService: ImageGetter {
     func getImage() -> Future<UIImage, ImageGetterError> {
-        return CameraRollService().getImage()
+        let imageSource = AppSettings.instance.imageSource
+        
+        switch imageSource {
+        case .fileSystem:
+            return FileSystemService().getImage()
+        case .camera:
+            return CameraService().getImage()
+        case .cameraRoll:
+            return CameraRollService().getImage()
+        }
+        
     }
 }

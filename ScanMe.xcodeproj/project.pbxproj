@@ -49,8 +49,8 @@
 		9D45A05F2822A21200E45744 /* ScanMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeTests.swift; sourceTree = "<group>"; };
 		9D45A0782823392200E45744 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		9D45A07A2823403100E45744 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
-		9D45A07D2823501C00E45744 /* Red.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Red.xcconfig; sourceTree = "<group>"; };
-		9D45A07E2823503200E45744 /* Green.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Green.xcconfig; sourceTree = "<group>"; };
+		9D45A07D2823501C00E45744 /* RedCameraRoll.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = RedCameraRoll.xcconfig; sourceTree = "<group>"; };
+		9D45A07E2823503200E45744 /* GreenFile.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = GreenFile.xcconfig; sourceTree = "<group>"; };
 		9D45A0852823560F00E45744 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewModel.swift; sourceTree = "<group>"; };
 		9D45A08C2823DCDC00E45744 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 		9D45A07C28234FFE00E45744 /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				9D45A07D2823501C00E45744 /* Red.xcconfig */,
-				9D45A07E2823503200E45744 /* Green.xcconfig */,
+				9D45A07D2823501C00E45744 /* RedCameraRoll.xcconfig */,
+				9D45A07E2823503200E45744 /* GreenFile.xcconfig */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -536,9 +536,9 @@
 			};
 			name = Release;
 		};
-		9D45A07F2823535200E45744 /* Debug Red */ = {
+		9D45A07F2823535200E45744 /* Debug RedCameraRoll */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D45A07D2823501C00E45744 /* Red.xcconfig */;
+			baseConfigurationReference = 9D45A07D2823501C00E45744 /* RedCameraRoll.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -596,10 +596,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = "Debug Red";
+			name = "Debug RedCameraRoll";
 		};
-		9D45A0802823535200E45744 /* Debug Red */ = {
+		9D45A0802823535200E45744 /* Debug RedCameraRoll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45A07D2823501C00E45744 /* RedCameraRoll.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -623,10 +624,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Debug Red";
+			name = "Debug RedCameraRoll";
 		};
-		9D45A0812823535200E45744 /* Debug Red */ = {
+		9D45A0812823535200E45744 /* Debug RedCameraRoll */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45A07D2823501C00E45744 /* RedCameraRoll.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -643,11 +645,11 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanMe.app/ScanMe";
 			};
-			name = "Debug Red";
+			name = "Debug RedCameraRoll";
 		};
-		9D45A0822823536400E45744 /* Debug Green */ = {
+		9D45A0822823536400E45744 /* Debug GreenFile */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D45A07E2823503200E45744 /* Green.xcconfig */;
+			baseConfigurationReference = 9D45A07E2823503200E45744 /* GreenFile.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -705,10 +707,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = "Debug Green";
+			name = "Debug GreenFile";
 		};
-		9D45A0832823536400E45744 /* Debug Green */ = {
+		9D45A0832823536400E45744 /* Debug GreenFile */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45A07E2823503200E45744 /* GreenFile.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -732,10 +735,11 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = "Debug Green";
+			name = "Debug GreenFile";
 		};
-		9D45A0842823536400E45744 /* Debug Green */ = {
+		9D45A0842823536400E45744 /* Debug GreenFile */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D45A07E2823503200E45744 /* GreenFile.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -752,7 +756,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScanMe.app/ScanMe";
 			};
-			name = "Debug Green";
+			name = "Debug GreenFile";
 		};
 /* End XCBuildConfiguration section */
 
@@ -761,8 +765,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D45A06D2822A21200E45744 /* Debug */,
-				9D45A0822823536400E45744 /* Debug Green */,
-				9D45A07F2823535200E45744 /* Debug Red */,
+				9D45A0822823536400E45744 /* Debug GreenFile */,
+				9D45A07F2823535200E45744 /* Debug RedCameraRoll */,
 				9D45A06E2822A21200E45744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -772,8 +776,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D45A0702822A21200E45744 /* Debug */,
-				9D45A0832823536400E45744 /* Debug Green */,
-				9D45A0802823535200E45744 /* Debug Red */,
+				9D45A0832823536400E45744 /* Debug GreenFile */,
+				9D45A0802823535200E45744 /* Debug RedCameraRoll */,
 				9D45A0712822A21200E45744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -783,8 +787,8 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9D45A0732822A21200E45744 /* Debug */,
-				9D45A0842823536400E45744 /* Debug Green */,
-				9D45A0812823535200E45744 /* Debug Red */,
+				9D45A0842823536400E45744 /* Debug GreenFile */,
+				9D45A0812823535200E45744 /* Debug RedCameraRoll */,
 				9D45A0742822A21200E45744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

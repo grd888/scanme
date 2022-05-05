@@ -4,6 +4,8 @@
 <dict>
 	<key>COLOR_THEME</key>
 	<string>$(COLOR_THEME)</string>
+	<key>IMAGE_SOURCE</key>
+	<string>$(IMAGE_SOURCE)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

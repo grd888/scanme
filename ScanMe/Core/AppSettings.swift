@@ -33,8 +33,9 @@ class AppSettings {
     private init() {}
     
     private static let COLOR_THEME = "COLOR_THEME"
+    private static let IMAGE_SOURCE = "IMAGE_SOURCE"
     var theme: Theme = Theme(rawValue: Bundle.stringValue(forkey: COLOR_THEME)) ?? .red
     
-    var imageSource: ImageSource = .camera
+    var imageSource: ImageSource = ImageSource(rawValue: Bundle.stringValue(forkey: IMAGE_SOURCE)) ?? .camera
     
 }
