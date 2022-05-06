@@ -7,7 +7,7 @@
 
 import UIKit
 import Combine
-import MobileCoreServices
+import UniformTypeIdentifiers
 
 class ScanMeViewController: UIViewController {
 
@@ -68,12 +68,11 @@ class ScanMeViewController: UIViewController {
 
 extension ScanMeViewController {
     private func getImageFromFiles() {
-        let documentsPicker = UIDocumentPickerViewController(documentTypes: ["public.image"], in: .open)
+        let documentsPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.image])
         documentsPicker.delegate = self
         documentsPicker.allowsMultipleSelection = false
         documentsPicker.modalPresentationStyle = .fullScreen
         self.present(documentsPicker, animated: true, completion: nil)
-        
     }
     
     private func getImageFromCamera() {
