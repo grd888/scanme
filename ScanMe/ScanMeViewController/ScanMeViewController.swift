@@ -7,6 +7,7 @@
 
 import UIKit
 import Combine
+import MobileCoreServices
 
 class ScanMeViewController: UIViewController {
 
@@ -67,7 +68,12 @@ class ScanMeViewController: UIViewController {
 
 extension ScanMeViewController {
     private func getImageFromFiles() {
-        showAlert(title: nil, message: "File picker not implemented yet.")
+        let documentsPicker = UIDocumentPickerViewController(documentTypes: ["public.image"], in: .open)
+        documentsPicker.delegate = self
+        documentsPicker.allowsMultipleSelection = false
+        documentsPicker.modalPresentationStyle = .fullScreen
+        self.present(documentsPicker, animated: true, completion: nil)
+        
     }
     
     private func getImageFromCamera() {
@@ -103,6 +109,17 @@ extension ScanMeViewController: UIImagePickerControllerDelegate & UINavigationCo
             viewModel.processImage(image)
         }
         picker.dismiss(animated: true)
+    }
+}
+
+extension ScanMeViewController: UIDocumentPickerDelegate {
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        guard let url = urls.first, url.startAccessingSecurityScopedResource() else { return }
+        guard let image = UIImage(contentsOfFile: url.path) else {
+            showAlert(title: "Error", message: "Could not read image.")
+            return
+        }
+        viewModel.processImage(image)
     }
 }
 
