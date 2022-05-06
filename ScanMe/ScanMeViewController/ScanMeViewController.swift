@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class ScanMeViewController: UIViewController {
 
@@ -21,13 +22,22 @@ class ScanMeViewController: UIViewController {
     
     @IBOutlet weak var addButton: UIButton!
     
+    lazy var imagePicker: UIImagePickerController = {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        return picker
+    }()
+    
     var appSettings: AppSettings = AppSettings.instance
+    var subscriptions = Set<AnyCancellable>()
+    
     var viewModel: ScanMeViewModel = ScanMeViewModel(imageService: ImageService())
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupTheme()
+        setupBindings()
     }
 
     private func setupTheme() {
@@ -35,9 +45,64 @@ class ScanMeViewController: UIViewController {
         resultsView.backgroundColor = primaryColor
         addButton.backgroundColor = primaryColor
     }
+  
+    private func setupBindings() {
+        viewModel.imagePublisher.sink { [weak self] in
+            self?.inputImageView.image = $0
+        }
+        .store(in: &subscriptions)
+    }
     
     @IBAction func handleAddInput(_ sender: Any) {
-        viewModel.getInputImage()
+        switch appSettings.imageSource {
+        case .fileSystem:
+            getImageFromFiles()
+        case .camera:
+            getImageFromCamera()
+        case .cameraRoll:
+            getImageFromCaneraRoll()
+        }
+    }
+}
+
+extension ScanMeViewController {
+    private func getImageFromFiles() {
+        showAlert(title: nil, message: "File picker not implemented yet.")
+    }
+    
+    private func getImageFromCamera() {
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            showAlert(title: "Error", message: "Your device does not seem to have a camera.")
+            return
+        }
+        imagePicker.sourceType = .camera
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true)
+    }
+    
+    private func getImageFromCaneraRoll() {
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.allowsEditing = true
+        present(imagePicker, animated: true)
+    }
+    
+    private func showAlert(title: String?, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Close", style: .default))
+        present(alert, animated: true)
+    }
+}
+
+extension ScanMeViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate  {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[.editedImage] as? UIImage ?? info[.originalImage] as? UIImage {
+            viewModel.processImage(image)
+        }
+        picker.dismiss(animated: true)
     }
 }
 
