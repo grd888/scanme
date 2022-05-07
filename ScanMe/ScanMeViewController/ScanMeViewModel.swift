@@ -20,11 +20,14 @@ class ScanMeViewModel {
     
     private var imageObserver = CurrentValueSubject<UIImage?, Never>(nil)
     private var resultSubject = PassthroughSubject<(expression: String, result: String), Never>()
-    private var textExtractor: TextExtractor
     private var subscriptions = Set<AnyCancellable>()
     
-    init(textExtractor: TextExtractor) {
+    private var textExtractor: TextExtractor
+    private var parser: ExpressionParser
+    
+    init(textExtractor: TextExtractor, parser: ExpressionParser) {
         self.textExtractor = textExtractor
+        self.parser = parser
     }
     
     func processImage(_ image: UIImage) {
@@ -37,7 +40,11 @@ class ScanMeViewModel {
     }
     
     func processText(_ text: String) {
-        print("Got text: \(text)")
-        resultSubject.send((expression: text, result: "2"))
+        if let expression = parser.parseExpression(string: text) {
+            resultSubject.send((expression: expression.expression, result: String(expression.result)))
+        } else {
+            resultSubject.send((expression: "Invalid", result: "----"))
+        }
+        
     }
 }

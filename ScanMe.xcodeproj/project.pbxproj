@@ -65,6 +65,18 @@
 		9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
 		9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
 		9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
+		9DCDF6602826797E0072E726 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF65F2826797E0072E726 /* ExpressionParser.swift */; };
+		9DCDF662282679990072E726 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF661282679990072E726 /* Expression.swift */; };
+		9DCDF66428267A550072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
+		9DCDF66528267A770072E726 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF65F2826797E0072E726 /* ExpressionParser.swift */; };
+		9DCDF66628267A770072E726 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF65F2826797E0072E726 /* ExpressionParser.swift */; };
+		9DCDF66728267A780072E726 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF65F2826797E0072E726 /* ExpressionParser.swift */; };
+		9DCDF66828267A7B0072E726 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF661282679990072E726 /* Expression.swift */; };
+		9DCDF66928267A7C0072E726 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF661282679990072E726 /* Expression.swift */; };
+		9DCDF66A28267A7C0072E726 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF661282679990072E726 /* Expression.swift */; };
+		9DCDF66B28267A7F0072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
+		9DCDF66C28267A800072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
+		9DCDF66D28267A800072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +116,9 @@
 		9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenCameraRollInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenCameraRollInfo.plist; sourceTree = "<absolute>"; };
 		9DCDF654282663620072E726 /* TextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtractor.swift; sourceTree = "<group>"; };
 		9DCDF6562826640F0072E726 /* GoogleMLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMLService.swift; sourceTree = "<group>"; };
+		9DCDF65F2826797E0072E726 /* ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParser.swift; sourceTree = "<group>"; };
+		9DCDF661282679990072E726 /* Expression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expression.swift; sourceTree = "<group>"; };
+		9DCDF66328267A550072E726 /* ExpressionParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParserService.swift; sourceTree = "<group>"; };
 		BB2198722D2108D32D08DF38 /* Pods-ScanMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.debug.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.debug.xcconfig"; sourceTree = "<group>"; };
 		E8062A0EE85E5187E146C439 /* Pods-ScanMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.release.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.release.xcconfig"; sourceTree = "<group>"; };
 		ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +197,7 @@
 		9D45A0472822A21000E45744 /* ScanMe */ = {
 			isa = PBXGroup;
 			children = (
+				9DCDF65E2826796E0072E726 /* ExpressionParser */,
 				9DCDF653282663370072E726 /* TextExtractor */,
 				9D45A0902823F86C00E45744 /* ScanMeViewController */,
 				9D45A0872823DAF900E45744 /* Core */,
@@ -238,6 +254,16 @@
 				9DCDF6562826640F0072E726 /* GoogleMLService.swift */,
 			);
 			path = TextExtractor;
+			sourceTree = "<group>";
+		};
+		9DCDF65E2826796E0072E726 /* ExpressionParser */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDF65F2826797E0072E726 /* ExpressionParser.swift */,
+				9DCDF661282679990072E726 /* Expression.swift */,
+				9DCDF66328267A550072E726 /* ExpressionParserService.swift */,
+			);
+			path = ExpressionParser;
 			sourceTree = "<group>";
 		};
 		F1658C861A6BC5931CBEFD76 /* Pods */ = {
@@ -716,7 +742,10 @@
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
 				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
 				9DCDF6572826640F0072E726 /* GoogleMLService.swift in Sources */,
+				9DCDF6602826797E0072E726 /* ExpressionParser.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
+				9DCDF66428267A550072E726 /* ExpressionParserService.swift in Sources */,
+				9DCDF662282679990072E726 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,7 +770,10 @@
 				9DCDF607282657E40072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF609282657E40072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */,
+				9DCDF66528267A770072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF60B282657E40072E726 /* UIColor+Hex.swift in Sources */,
+				9DCDF66B28267A7F0072E726 /* ExpressionParserService.swift in Sources */,
+				9DCDF66828267A7B0072E726 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,7 +790,10 @@
 				9DCDF62428265A6B0072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF62628265A6B0072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */,
+				9DCDF66628267A770072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF62828265A6B0072E726 /* UIColor+Hex.swift in Sources */,
+				9DCDF66C28267A800072E726 /* ExpressionParserService.swift in Sources */,
+				9DCDF66928267A7C0072E726 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +810,10 @@
 				9DCDF64128265B420072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF64328265B420072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */,
+				9DCDF66728267A780072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF64528265B420072E726 /* UIColor+Hex.swift in Sources */,
+				9DCDF66D28267A800072E726 /* ExpressionParserService.swift in Sources */,
+				9DCDF66A28267A7C0072E726 /* Expression.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
