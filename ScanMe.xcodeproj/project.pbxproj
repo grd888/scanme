@@ -77,6 +77,14 @@
 		9DCDF64928265B420072E726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
 		9DCDF64A28265B420072E726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0512822A21100E45744 /* Assets.xcassets */; };
 		9DCDF64B28265B420072E726 /* ScanMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A04E2822A21000E45744 /* ScanMeViewController.storyboard */; };
+		9DCDF655282663620072E726 /* TextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF654282663620072E726 /* TextExtractor.swift */; };
+		9DCDF6572826640F0072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
+		9DCDF6582826669E0072E726 /* TextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF654282663620072E726 /* TextExtractor.swift */; };
+		9DCDF6592826669F0072E726 /* TextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF654282663620072E726 /* TextExtractor.swift */; };
+		9DCDF65A282666A00072E726 /* TextExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF654282663620072E726 /* TextExtractor.swift */; };
+		9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
+		9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
+		9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF6562826640F0072E726 /* GoogleMLService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +127,8 @@
 		9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenFileInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenFileInfo.plist; sourceTree = "<absolute>"; };
 		9DCDF65128265B420072E726 /* ScanMeGreenCameraRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenCameraRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenCameraRollInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenCameraRollInfo.plist; sourceTree = "<absolute>"; };
+		9DCDF654282663620072E726 /* TextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtractor.swift; sourceTree = "<group>"; };
+		9DCDF6562826640F0072E726 /* GoogleMLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMLService.swift; sourceTree = "<group>"; };
 		BB2198722D2108D32D08DF38 /* Pods-ScanMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.debug.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.debug.xcconfig"; sourceTree = "<group>"; };
 		E8062A0EE85E5187E146C439 /* Pods-ScanMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.release.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.release.xcconfig"; sourceTree = "<group>"; };
 		ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +207,7 @@
 		9D45A0472822A21000E45744 /* ScanMe */ = {
 			isa = PBXGroup;
 			children = (
+				9DCDF653282663370072E726 /* TextExtractor */,
 				9D45A0902823F86C00E45744 /* ScanMeViewController */,
 				9D45A08B2823DCB600E45744 /* ImageService */,
 				9D45A0872823DAF900E45744 /* Core */,
@@ -256,6 +267,15 @@
 				9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */,
 			);
 			path = ScanMeViewController;
+			sourceTree = "<group>";
+		};
+		9DCDF653282663370072E726 /* TextExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				9DCDF654282663620072E726 /* TextExtractor.swift */,
+				9DCDF6562826640F0072E726 /* GoogleMLService.swift */,
+			);
+			path = TextExtractor;
 			sourceTree = "<group>";
 		};
 		F1658C861A6BC5931CBEFD76 /* Pods */ = {
@@ -730,12 +750,14 @@
 				9D45A0982824020700E45744 /* FileSystemService.swift in Sources */,
 				9D45A04D2822A21000E45744 /* ScanMeViewController.swift in Sources */,
 				9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */,
+				9DCDF655282663620072E726 /* TextExtractor.swift in Sources */,
 				9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */,
 				9D45A0492822A21000E45744 /* AppDelegate.swift in Sources */,
 				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
 				9D45A096282401CE00E45744 /* CameraService.swift in Sources */,
 				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
+				9DCDF6572826640F0072E726 /* GoogleMLService.swift in Sources */,
 				9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
 			);
@@ -758,12 +780,14 @@
 				9DCDF601282657E40072E726 /* FileSystemService.swift in Sources */,
 				9DCDF602282657E40072E726 /* ScanMeViewController.swift in Sources */,
 				9DCDF603282657E40072E726 /* ImageService.swift in Sources */,
+				9DCDF6582826669E0072E726 /* TextExtractor.swift in Sources */,
 				9DCDF604282657E40072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF605282657E40072E726 /* AppDelegate.swift in Sources */,
 				9DCDF606282657E40072E726 /* AppSettings.swift in Sources */,
 				9DCDF607282657E40072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF608282657E40072E726 /* CameraService.swift in Sources */,
 				9DCDF609282657E40072E726 /* ScanMeViewModel.swift in Sources */,
+				9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF60A282657E40072E726 /* ImageGetter.swift in Sources */,
 				9DCDF60B282657E40072E726 /* UIColor+Hex.swift in Sources */,
 			);
@@ -778,12 +802,14 @@
 				9DCDF61E28265A6B0072E726 /* FileSystemService.swift in Sources */,
 				9DCDF61F28265A6B0072E726 /* ScanMeViewController.swift in Sources */,
 				9DCDF62028265A6B0072E726 /* ImageService.swift in Sources */,
+				9DCDF6592826669F0072E726 /* TextExtractor.swift in Sources */,
 				9DCDF62128265A6B0072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF62228265A6B0072E726 /* AppDelegate.swift in Sources */,
 				9DCDF62328265A6B0072E726 /* AppSettings.swift in Sources */,
 				9DCDF62428265A6B0072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF62528265A6B0072E726 /* CameraService.swift in Sources */,
 				9DCDF62628265A6B0072E726 /* ScanMeViewModel.swift in Sources */,
+				9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF62728265A6B0072E726 /* ImageGetter.swift in Sources */,
 				9DCDF62828265A6B0072E726 /* UIColor+Hex.swift in Sources */,
 			);
@@ -798,12 +824,14 @@
 				9DCDF63B28265B420072E726 /* FileSystemService.swift in Sources */,
 				9DCDF63C28265B420072E726 /* ScanMeViewController.swift in Sources */,
 				9DCDF63D28265B420072E726 /* ImageService.swift in Sources */,
+				9DCDF65A282666A00072E726 /* TextExtractor.swift in Sources */,
 				9DCDF63E28265B420072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF63F28265B420072E726 /* AppDelegate.swift in Sources */,
 				9DCDF64028265B420072E726 /* AppSettings.swift in Sources */,
 				9DCDF64128265B420072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF64228265B420072E726 /* CameraService.swift in Sources */,
 				9DCDF64328265B420072E726 /* ScanMeViewModel.swift in Sources */,
+				9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF64428265B420072E726 /* ImageGetter.swift in Sources */,
 				9DCDF64528265B420072E726 /* UIColor+Hex.swift in Sources */,
 			);

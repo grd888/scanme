@@ -15,7 +15,7 @@ class ScanMeComposer {
     func createScanMeViewController() -> ScanMeViewController {
         let storyboard = UIStoryboard(name: "ScanMeViewController", bundle: nil)
         let vc = storyboard.instantiateInitialViewController() as! ScanMeViewController
-        vc.viewModel = ScanMeViewModel(imageService: ImageService())
+        vc.viewModel = ScanMeViewModel(textExtractor: GoogleMLService())
         return vc
     }
 }

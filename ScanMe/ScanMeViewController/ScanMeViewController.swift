@@ -32,7 +32,7 @@ class ScanMeViewController: UIViewController {
     var appSettings: AppSettings = AppSettings.instance
     var subscriptions = Set<AnyCancellable>()
     
-    var viewModel: ScanMeViewModel = ScanMeViewModel(imageService: ImageService())
+    var viewModel: ScanMeViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +50,12 @@ class ScanMeViewController: UIViewController {
     private func setupBindings() {
         viewModel.imagePublisher.sink { [weak self] in
             self?.inputImageView.image = $0
+        }
+        .store(in: &subscriptions)
+        
+        viewModel.resultPublisher.sink { [weak self] in
+            self?.inputValueLabel.text = $0.expression
+            self?.resultValueLabel.text = $0.result
         }
         .store(in: &subscriptions)
     }

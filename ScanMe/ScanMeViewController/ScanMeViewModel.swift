@@ -14,15 +14,30 @@ class ScanMeViewModel {
     var imagePublisher: AnyPublisher<UIImage?, Never> {
         return imageObserver.eraseToAnyPublisher()
     }
-    private var imageObserver = CurrentValueSubject<UIImage?, Never>(nil)
-    private var imageService: ImageGetter
+    var resultPublisher: AnyPublisher<(expression: String, result: String), Never> {
+        return resultSubject.eraseToAnyPublisher()
+    }
     
-    init(imageService: ImageGetter) {
-        self.imageService = imageService
+    private var imageObserver = CurrentValueSubject<UIImage?, Never>(nil)
+    private var resultSubject = PassthroughSubject<(expression: String, result: String), Never>()
+    private var textExtractor: TextExtractor
+    private var subscriptions = Set<AnyCancellable>()
+    
+    init(textExtractor: TextExtractor) {
+        self.textExtractor = textExtractor
     }
     
     func processImage(_ image: UIImage) {
-        print("Got image!: \(image)")
         imageObserver.send(image)
+        textExtractor.extractText(from: image)
+            .sink { [weak self] text in
+                self?.processText(text)
+            }
+            .store(in: &subscriptions)
+    }
+    
+    func processText(_ text: String) {
+        print("Got text: \(text)")
+        resultSubject.send((expression: text, result: "2"))
     }
 }
