@@ -20,58 +20,38 @@
 		9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
 		9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
-		9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
-		9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 		9D45A0922823FE3D00E45744 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
-		9D45A0942824011800E45744 /* CameraRollService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0932824011800E45744 /* CameraRollService.swift */; };
-		9D45A096282401CE00E45744 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A095282401CE00E45744 /* CameraService.swift */; };
-		9D45A0982824020700E45744 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0972824020700E45744 /* FileSystemService.swift */; };
-		9DCDF5FF282657E40072E726 /* CameraRollService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0932824011800E45744 /* CameraRollService.swift */; };
 		9DCDF600282657E40072E726 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
-		9DCDF601282657E40072E726 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0972824020700E45744 /* FileSystemService.swift */; };
 		9DCDF602282657E40072E726 /* ScanMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04C2822A21000E45744 /* ScanMeViewController.swift */; };
-		9DCDF603282657E40072E726 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
 		9DCDF604282657E40072E726 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
 		9DCDF605282657E40072E726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0482822A21000E45744 /* AppDelegate.swift */; };
 		9DCDF606282657E40072E726 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
 		9DCDF607282657E40072E726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04A2822A21000E45744 /* SceneDelegate.swift */; };
-		9DCDF608282657E40072E726 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A095282401CE00E45744 /* CameraService.swift */; };
 		9DCDF609282657E40072E726 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
-		9DCDF60A282657E40072E726 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 		9DCDF60B282657E40072E726 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9DCDF60D282657E40072E726 /* Pods_ScanMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */; };
 		9DCDF60F282657E40072E726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
 		9DCDF610282657E40072E726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0512822A21100E45744 /* Assets.xcassets */; };
 		9DCDF611282657E40072E726 /* ScanMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A04E2822A21000E45744 /* ScanMeViewController.storyboard */; };
-		9DCDF61C28265A6B0072E726 /* CameraRollService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0932824011800E45744 /* CameraRollService.swift */; };
 		9DCDF61D28265A6B0072E726 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
-		9DCDF61E28265A6B0072E726 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0972824020700E45744 /* FileSystemService.swift */; };
 		9DCDF61F28265A6B0072E726 /* ScanMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04C2822A21000E45744 /* ScanMeViewController.swift */; };
-		9DCDF62028265A6B0072E726 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
 		9DCDF62128265A6B0072E726 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
 		9DCDF62228265A6B0072E726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0482822A21000E45744 /* AppDelegate.swift */; };
 		9DCDF62328265A6B0072E726 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
 		9DCDF62428265A6B0072E726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04A2822A21000E45744 /* SceneDelegate.swift */; };
-		9DCDF62528265A6B0072E726 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A095282401CE00E45744 /* CameraService.swift */; };
 		9DCDF62628265A6B0072E726 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
-		9DCDF62728265A6B0072E726 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 		9DCDF62828265A6B0072E726 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9DCDF62A28265A6B0072E726 /* Pods_ScanMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */; };
 		9DCDF62C28265A6B0072E726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
 		9DCDF62D28265A6B0072E726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0512822A21100E45744 /* Assets.xcassets */; };
 		9DCDF62E28265A6B0072E726 /* ScanMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A04E2822A21000E45744 /* ScanMeViewController.storyboard */; };
-		9DCDF63928265B420072E726 /* CameraRollService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0932824011800E45744 /* CameraRollService.swift */; };
 		9DCDF63A28265B420072E726 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
-		9DCDF63B28265B420072E726 /* FileSystemService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0972824020700E45744 /* FileSystemService.swift */; };
 		9DCDF63C28265B420072E726 /* ScanMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04C2822A21000E45744 /* ScanMeViewController.swift */; };
-		9DCDF63D28265B420072E726 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08C2823DCDC00E45744 /* ImageService.swift */; };
 		9DCDF63E28265B420072E726 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
 		9DCDF63F28265B420072E726 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0482822A21000E45744 /* AppDelegate.swift */; };
 		9DCDF64028265B420072E726 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
 		9DCDF64128265B420072E726 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04A2822A21000E45744 /* SceneDelegate.swift */; };
-		9DCDF64228265B420072E726 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A095282401CE00E45744 /* CameraService.swift */; };
 		9DCDF64328265B420072E726 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
-		9DCDF64428265B420072E726 /* ImageGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A08E2823DCF400E45744 /* ImageGetter.swift */; };
 		9DCDF64528265B420072E726 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9DCDF64728265B420072E726 /* Pods_ScanMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */; };
 		9DCDF64928265B420072E726 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
@@ -115,12 +95,7 @@
 		9D45A07A2823403100E45744 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		9D45A0852823560F00E45744 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewModel.swift; sourceTree = "<group>"; };
-		9D45A08C2823DCDC00E45744 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
-		9D45A08E2823DCF400E45744 /* ImageGetter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGetter.swift; sourceTree = "<group>"; };
 		9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeComposer.swift; sourceTree = "<group>"; };
-		9D45A0932824011800E45744 /* CameraRollService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRollService.swift; sourceTree = "<group>"; };
-		9D45A095282401CE00E45744 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
-		9D45A0972824020700E45744 /* FileSystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemService.swift; sourceTree = "<group>"; };
 		9DCDF617282657E40072E726 /* ScanMeRedCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeRedCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeRedCameraInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeRedCameraInfo.plist; sourceTree = "<absolute>"; };
 		9DCDF63428265A6B0072E726 /* ScanMeGreenFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,7 +184,6 @@
 			children = (
 				9DCDF653282663370072E726 /* TextExtractor */,
 				9D45A0902823F86C00E45744 /* ScanMeViewController */,
-				9D45A08B2823DCB600E45744 /* ImageService */,
 				9D45A0872823DAF900E45744 /* Core */,
 				9D45A0562822A21100E45744 /* Info.plist */,
 			);
@@ -245,18 +219,6 @@
 				9D45A0852823560F00E45744 /* Bundle+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		9D45A08B2823DCB600E45744 /* ImageService */ = {
-			isa = PBXGroup;
-			children = (
-				9D45A08C2823DCDC00E45744 /* ImageService.swift */,
-				9D45A0932824011800E45744 /* CameraRollService.swift */,
-				9D45A095282401CE00E45744 /* CameraService.swift */,
-				9D45A0972824020700E45744 /* FileSystemService.swift */,
-				9D45A08E2823DCF400E45744 /* ImageGetter.swift */,
-			);
-			path = ImageService;
 			sourceTree = "<group>";
 		};
 		9D45A0902823F86C00E45744 /* ScanMeViewController */ = {
@@ -745,20 +707,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D45A0942824011800E45744 /* CameraRollService.swift in Sources */,
 				9D45A0922823FE3D00E45744 /* ScanMeComposer.swift in Sources */,
-				9D45A0982824020700E45744 /* FileSystemService.swift in Sources */,
 				9D45A04D2822A21000E45744 /* ScanMeViewController.swift in Sources */,
-				9D45A08D2823DCDC00E45744 /* ImageService.swift in Sources */,
 				9DCDF655282663620072E726 /* TextExtractor.swift in Sources */,
 				9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */,
 				9D45A0492822A21000E45744 /* AppDelegate.swift in Sources */,
 				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
-				9D45A096282401CE00E45744 /* CameraService.swift in Sources */,
 				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
 				9DCDF6572826640F0072E726 /* GoogleMLService.swift in Sources */,
-				9D45A08F2823DCF400E45744 /* ImageGetter.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -775,20 +732,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DCDF5FF282657E40072E726 /* CameraRollService.swift in Sources */,
 				9DCDF600282657E40072E726 /* ScanMeComposer.swift in Sources */,
-				9DCDF601282657E40072E726 /* FileSystemService.swift in Sources */,
 				9DCDF602282657E40072E726 /* ScanMeViewController.swift in Sources */,
-				9DCDF603282657E40072E726 /* ImageService.swift in Sources */,
 				9DCDF6582826669E0072E726 /* TextExtractor.swift in Sources */,
 				9DCDF604282657E40072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF605282657E40072E726 /* AppDelegate.swift in Sources */,
 				9DCDF606282657E40072E726 /* AppSettings.swift in Sources */,
 				9DCDF607282657E40072E726 /* SceneDelegate.swift in Sources */,
-				9DCDF608282657E40072E726 /* CameraService.swift in Sources */,
 				9DCDF609282657E40072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */,
-				9DCDF60A282657E40072E726 /* ImageGetter.swift in Sources */,
 				9DCDF60B282657E40072E726 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,20 +749,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DCDF61C28265A6B0072E726 /* CameraRollService.swift in Sources */,
 				9DCDF61D28265A6B0072E726 /* ScanMeComposer.swift in Sources */,
-				9DCDF61E28265A6B0072E726 /* FileSystemService.swift in Sources */,
 				9DCDF61F28265A6B0072E726 /* ScanMeViewController.swift in Sources */,
-				9DCDF62028265A6B0072E726 /* ImageService.swift in Sources */,
 				9DCDF6592826669F0072E726 /* TextExtractor.swift in Sources */,
 				9DCDF62128265A6B0072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF62228265A6B0072E726 /* AppDelegate.swift in Sources */,
 				9DCDF62328265A6B0072E726 /* AppSettings.swift in Sources */,
 				9DCDF62428265A6B0072E726 /* SceneDelegate.swift in Sources */,
-				9DCDF62528265A6B0072E726 /* CameraService.swift in Sources */,
 				9DCDF62628265A6B0072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */,
-				9DCDF62728265A6B0072E726 /* ImageGetter.swift in Sources */,
 				9DCDF62828265A6B0072E726 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -819,20 +766,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DCDF63928265B420072E726 /* CameraRollService.swift in Sources */,
 				9DCDF63A28265B420072E726 /* ScanMeComposer.swift in Sources */,
-				9DCDF63B28265B420072E726 /* FileSystemService.swift in Sources */,
 				9DCDF63C28265B420072E726 /* ScanMeViewController.swift in Sources */,
-				9DCDF63D28265B420072E726 /* ImageService.swift in Sources */,
 				9DCDF65A282666A00072E726 /* TextExtractor.swift in Sources */,
 				9DCDF63E28265B420072E726 /* Bundle+Extension.swift in Sources */,
 				9DCDF63F28265B420072E726 /* AppDelegate.swift in Sources */,
 				9DCDF64028265B420072E726 /* AppSettings.swift in Sources */,
 				9DCDF64128265B420072E726 /* SceneDelegate.swift in Sources */,
-				9DCDF64228265B420072E726 /* CameraService.swift in Sources */,
 				9DCDF64328265B420072E726 /* ScanMeViewModel.swift in Sources */,
 				9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */,
-				9DCDF64428265B420072E726 /* ImageGetter.swift in Sources */,
 				9DCDF64528265B420072E726 /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

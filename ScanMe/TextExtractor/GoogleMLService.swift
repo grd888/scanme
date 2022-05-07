@@ -7,11 +7,21 @@
 
 import UIKit
 import Combine
+import MLKit
 
 class GoogleMLService: TextExtractor {
     func extractText(from image: UIImage) -> Future<String, Never> {
         return Future<String,Never> { promise in
-            promise(.success("1 + 1"))
+            let textRecognizer = TextRecognizer.textRecognizer()
+            let visionImage = VisionImage(image: image)
+            visionImage.orientation = image.imageOrientation
+            
+            textRecognizer.process(visionImage) { result, error in
+                if let result = result, let block = result.blocks.first, let line = block.lines.first {
+                    promise(.success(line.text))
+                }
+            }
+            
         }
     }
 }
