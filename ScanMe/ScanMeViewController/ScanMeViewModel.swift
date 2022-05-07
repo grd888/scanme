@@ -32,6 +32,7 @@ class ScanMeViewModel {
     
     func processImage(_ image: UIImage) {
         imageObserver.send(image)
+
         textExtractor.extractText(from: image)
             .sink { [weak self] text in
                 self?.processText(text)

@@ -25,6 +25,7 @@ class ScanMeViewController: UIViewController {
     
     lazy var imagePicker: UIImagePickerController = {
         let picker = UIImagePickerController()
+        picker.allowsEditing = true
         picker.delegate = self
         return picker
     }()
@@ -48,16 +49,19 @@ class ScanMeViewController: UIViewController {
     }
   
     private func setupBindings() {
-        viewModel.imagePublisher.sink { [weak self] in
-            self?.inputImageView.image = $0
-        }
-        .store(in: &subscriptions)
+        viewModel.imagePublisher
+            .assign(to: \.image, on: inputImageView)
+            .store(in: &subscriptions)
         
-        viewModel.resultPublisher.sink { [weak self] in
-            self?.inputValueLabel.text = $0.expression
-            self?.resultValueLabel.text = $0.result
-        }
-        .store(in: &subscriptions)
+        viewModel.resultPublisher
+            .map { $0.expression }
+            .assign(to: \.text, on: inputValueLabel)
+            .store(in: &subscriptions)
+        
+        viewModel.resultPublisher
+            .map { $0.result }
+            .assign(to: \.text, on: resultValueLabel)
+            .store(in: &subscriptions)
     }
     
     @IBAction func handleAddInput(_ sender: Any) {
@@ -87,13 +91,11 @@ extension ScanMeViewController {
             return
         }
         imagePicker.sourceType = .camera
-        imagePicker.allowsEditing = true
         present(imagePicker, animated: true)
     }
     
     private func getImageFromCaneraRoll() {
         imagePicker.sourceType = .photoLibrary
-        imagePicker.allowsEditing = true
         present(imagePicker, animated: true)
     }
     
