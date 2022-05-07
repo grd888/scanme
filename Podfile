@@ -6,6 +6,7 @@ target 'ScanMe' do
   use_frameworks!
 
   # Pods for ScanMe
+  pod 'GoogleMLKit/TextRecognition','2.2.0'
 
   target 'ScanMeTests' do
     inherit! :search_paths
