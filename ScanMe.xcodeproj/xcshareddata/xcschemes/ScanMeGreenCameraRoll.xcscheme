@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9DCDF63628265B420072E726"
-               BuildableName = "ScanMe copy.app"
+               BuildableName = "ScanMeGreenCameraRoll.app"
                BlueprintName = "ScanMeGreenCameraRoll"
                ReferencedContainer = "container:ScanMe.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DCDF63628265B420072E726"
-            BuildableName = "ScanMe copy.app"
+            BuildableName = "ScanMeGreenCameraRoll.app"
             BlueprintName = "ScanMeGreenCameraRoll"
             ReferencedContainer = "container:ScanMe.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DCDF63628265B420072E726"
-            BuildableName = "ScanMe copy.app"
+            BuildableName = "ScanMeGreenCameraRoll.app"
             BlueprintName = "ScanMeGreenCameraRoll"
             ReferencedContainer = "container:ScanMe.xcodeproj">
          </BuildableReference>
