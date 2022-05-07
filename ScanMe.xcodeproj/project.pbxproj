@@ -114,11 +114,11 @@
 		9D45A095282401CE00E45744 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		9D45A0972824020700E45744 /* FileSystemService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemService.swift; sourceTree = "<group>"; };
 		9DCDF617282657E40072E726 /* ScanMeRedCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeRedCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF618282657E40072E726 /* ScanMe copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ScanMe copy-Info.plist"; path = "/Users/training1/Developer/projects/ScanMe/ScanMe copy-Info.plist"; sourceTree = "<absolute>"; };
+		9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeRedCameraInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeRedCameraInfo.plist; sourceTree = "<absolute>"; };
 		9DCDF63428265A6B0072E726 /* ScanMeGreenFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF63528265A6C0072E726 /* ScanMe copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ScanMe copy2-Info.plist"; path = "/Users/training1/Developer/projects/ScanMe/ScanMe copy2-Info.plist"; sourceTree = "<absolute>"; };
+		9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenFileInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenFileInfo.plist; sourceTree = "<absolute>"; };
 		9DCDF65128265B420072E726 /* ScanMeGreenCameraRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenCameraRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF65228265B420072E726 /* ScanMe copy3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ScanMe copy3-Info.plist"; path = "/Users/training1/Developer/projects/ScanMe/ScanMe copy3-Info.plist"; sourceTree = "<absolute>"; };
+		9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenCameraRollInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenCameraRollInfo.plist; sourceTree = "<absolute>"; };
 		BB2198722D2108D32D08DF38 /* Pods-ScanMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.debug.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.debug.xcconfig"; sourceTree = "<group>"; };
 		E8062A0EE85E5187E146C439 /* Pods-ScanMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.release.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.release.xcconfig"; sourceTree = "<group>"; };
 		ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,9 +176,9 @@
 				9D45A0462822A21000E45744 /* Products */,
 				F1658C861A6BC5931CBEFD76 /* Pods */,
 				FDCA8BED15804F1048C0D2BE /* Frameworks */,
-				9DCDF618282657E40072E726 /* ScanMe copy-Info.plist */,
-				9DCDF63528265A6C0072E726 /* ScanMe copy2-Info.plist */,
-				9DCDF65228265B420072E726 /* ScanMe copy3-Info.plist */,
+				9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */,
+				9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */,
+				9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -415,8 +415,8 @@
 				9D45A0442822A21000E45744 /* ScanMe */,
 				9DCDF5FC282657E40072E726 /* ScanMeRedCamera */,
 				9DCDF61928265A6B0072E726 /* ScanMeGreenFile */,
-				9D45A05A2822A21200E45744 /* ScanMeTests */,
 				9DCDF63628265B420072E726 /* ScanMeGreenCameraRoll */,
+				9D45A05A2822A21200E45744 /* ScanMeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1077,7 +1077,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = camera;
-				INFOPLIST_FILE = "ScanMe copy-Info.plist";
+				INFOPLIST_FILE = ScanMeRedCameraInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
@@ -1111,7 +1111,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = camera;
-				INFOPLIST_FILE = "ScanMe copy-Info.plist";
+				INFOPLIST_FILE = ScanMeRedCameraInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
@@ -1145,7 +1145,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = fileSystem;
-				INFOPLIST_FILE = "ScanMe copy2-Info.plist";
+				INFOPLIST_FILE = ScanMeGreenFileInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
@@ -1179,7 +1179,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = fileSystem;
-				INFOPLIST_FILE = "ScanMe copy2-Info.plist";
+				INFOPLIST_FILE = ScanMeGreenFileInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
@@ -1213,7 +1213,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = cameraRoll;
-				INFOPLIST_FILE = "ScanMe copy3-Info.plist";
+				INFOPLIST_FILE = ScanMeGreenCameraRollInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
@@ -1247,7 +1247,7 @@
 				DEVELOPMENT_TEAM = CZHT3BTCGY;
 				GENERATE_INFOPLIST_FILE = YES;
 				IMAGE_SOURCE = cameraRoll;
-				INFOPLIST_FILE = "ScanMe copy3-Info.plist";
+				INFOPLIST_FILE = ScanMeGreenCameraRollInfo.plist;
 				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "ScanMe needs access to your camera to take photos and extract arithmetic expressions from them.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "ScanMe needs access to the Photo Library to pick images and extract arithmetic expressions from them.";
