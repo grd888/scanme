@@ -1,5 +1,23 @@
-# Scan Me!
+# Scan Me
 
-### Component Diagram
+## Component Diagram
 
 ![ScanMe](ScanMe.drawio.png)
+
+### **Notes**
+
+#### **OCR Library**
+
+For this project, the OCR Library used is Google ML Kit
+<https://developers.google.com/ml-kit/vision/text-recognition/ios>
+  
+#### **Multiple App Flavors**
+
+To build multiple app flavors from the same codebase, multiple targets were created, each with it's own custom PLIST file. User-defined attributes for Color theme (COLOR_THEME) and image source (IMAGE_SOURCE) were used to set the corresponding properties during compile time.
+
+#### **MVVM**
+
+The project used the MVVM design pattern with Combine to separate logic from UI.
+
+#### **Modularity**
+The use of protocol interface achieves a certain amount of modularity such that the main logic is not dependent on the external services e.g. the OCR Service. For example we can replace Google ML Kit with another library without affecting the main logic.
