@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:29c68a5772ce27550500d3d3c7cec6c2481adacb4fb84a11a2d2ae20e4b844f3
-size 544
+framework module MLKitTextRecognition {
+  umbrella header "MLKitTextRecognition.h"
+  export *
+  module * { export * }
+  link "c++"
+  link "z"
+  link framework "AVFoundation"
+  link framework "Accelerate"
+  link framework "CoreFoundation"
+  link framework "CoreGraphics"
+  link framework "CoreImage"
+  link framework "CoreMedia"
+  link framework "CoreTelephony"
+  link framework "CoreVideo"
+  link framework "Foundation"
+  link framework "QuartzCore"
+  link framework "Security"
+  link framework "SystemConfiguration"
+  link framework "UIKit"
+}

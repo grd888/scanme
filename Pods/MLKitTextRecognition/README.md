@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:f80588e672f61faf495c991d03b1a95e934fbef2b16a81e9736661cbbcdf67bc
-size 232
+# ML Kit Text Recognition SDK
+
+For more information, check out [ML Kit] (https://developers.google.com/ml-kit/guides).
+
+## Getting Started with Cocoapods
+
+Add the following to your Podfile
+
+```
+pod 'GoogleMLKit/TextRecognition'
+```

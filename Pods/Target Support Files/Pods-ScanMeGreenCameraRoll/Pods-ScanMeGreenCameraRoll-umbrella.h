@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ScanMeTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ScanMeTestsVersionString[];
+FOUNDATION_EXPORT double Pods_ScanMeGreenCameraRollVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ScanMeGreenCameraRollVersionString[];
 

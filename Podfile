@@ -2,15 +2,21 @@
 platform :ios, '15.0'
 
 target 'ScanMe' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for ScanMe
   pod 'GoogleMLKit/TextRecognition','2.2.0'
+end
 
-  target 'ScanMeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'ScanMeRedCamera' do
+  use_frameworks!
+  pod 'GoogleMLKit/TextRecognition','2.2.0'
+end
 
+target 'ScanMeGreenFile' do
+  use_frameworks!
+  pod 'GoogleMLKit/TextRecognition','2.2.0'
+end
+
+target 'ScanMeGreenCameraRoll' do
+  use_frameworks!
+  pod 'GoogleMLKit/TextRecognition','2.2.0'
 end

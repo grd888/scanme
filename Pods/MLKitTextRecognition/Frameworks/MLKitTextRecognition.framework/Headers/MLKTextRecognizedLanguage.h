@@ -1,3 +1,20 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:efa933479fbba4e0c64aef3306d8fbee8d3f3880af07bd26aa4f72aa39f3fdc5
-size 466
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+/** Detected language from text recognition. */
+NS_SWIFT_NAME(TextRecognizedLanguage)
+@interface MLKTextRecognizedLanguage : NSObject
+
+/**
+ *  The [BCP 47 language tag](https://tools.ietf.org/rfc/bcp/bcp47.txt), such as, `"en-US"` or
+ * `"sr-Latn"`.
+ */
+@property(nonatomic, readonly, nullable) NSString *languageCode;
+
+/** Unavailable. */
+- (instancetype)init NS_UNAVAILABLE;
+
+@end
+
+NS_ASSUME_NONNULL_END
