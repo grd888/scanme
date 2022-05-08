@@ -1,6 +1,0 @@
-framework module Pods_ScanMeRedCamera {
-  umbrella header "Pods-ScanMeRedCamera-umbrella.h"
-
-  export *
-  module * { export * }
-}
