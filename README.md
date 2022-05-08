@@ -2,7 +2,7 @@
 
 ## Component Diagram
 
-![ScanMe](ScanMe.drawio.png)
+![ScanMe](ScanMe.png)
 
 ### **Notes**
 
