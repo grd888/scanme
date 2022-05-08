@@ -23,6 +23,10 @@
 		9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
 		9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */; };
 		9D45A0922823FE3D00E45744 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
+		9DA053E328274F7700402397 /* VisionKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA053E228274F7700402397 /* VisionKitService.swift */; };
+		9DA053E428274F8100402397 /* VisionKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA053E228274F7700402397 /* VisionKitService.swift */; };
+		9DA053E528274F8200402397 /* VisionKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA053E228274F7700402397 /* VisionKitService.swift */; };
+		9DA053E628274F8200402397 /* VisionKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA053E228274F7700402397 /* VisionKitService.swift */; };
 		9DCDF600282657E40072E726 /* ScanMeComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */; };
 		9DCDF602282657E40072E726 /* ScanMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A04C2822A21000E45744 /* ScanMeViewController.swift */; };
 		9DCDF604282657E40072E726 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
@@ -114,6 +118,7 @@
 		9D45A0852823560F00E45744 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewModel.swift; sourceTree = "<group>"; };
 		9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeComposer.swift; sourceTree = "<group>"; };
+		9DA053E228274F7700402397 /* VisionKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionKitService.swift; sourceTree = "<group>"; };
 		9DCDF617282657E40072E726 /* ScanMeRedCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeRedCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScanMeRedCameraInfo.plist; sourceTree = "<group>"; };
 		9DCDF63428265A6B0072E726 /* ScanMeGreenFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +263,7 @@
 			children = (
 				9DCDF654282663620072E726 /* TextExtractor.swift */,
 				9DCDF6562826640F0072E726 /* GoogleMLService.swift */,
+				9DA053E228274F7700402397 /* VisionKitService.swift */,
 			);
 			path = TextExtractor;
 			sourceTree = "<group>";
@@ -730,6 +736,7 @@
 				9D45A0792823392200E45744 /* AppSettings.swift in Sources */,
 				9D45A04B2822A21000E45744 /* SceneDelegate.swift in Sources */,
 				9D45A08A2823DBD100E45744 /* ScanMeViewModel.swift in Sources */,
+				9DA053E328274F7700402397 /* VisionKitService.swift in Sources */,
 				9DCDF6572826640F0072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF6602826797E0072E726 /* ExpressionParser.swift in Sources */,
 				9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */,
@@ -758,6 +765,7 @@
 				9DCDF606282657E40072E726 /* AppSettings.swift in Sources */,
 				9DCDF607282657E40072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF609282657E40072E726 /* ScanMeViewModel.swift in Sources */,
+				9DA053E428274F8100402397 /* VisionKitService.swift in Sources */,
 				9DCDF65B282666A50072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF66528267A770072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF60B282657E40072E726 /* UIColor+Hex.swift in Sources */,
@@ -778,6 +786,7 @@
 				9DCDF62328265A6B0072E726 /* AppSettings.swift in Sources */,
 				9DCDF62428265A6B0072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF62628265A6B0072E726 /* ScanMeViewModel.swift in Sources */,
+				9DA053E528274F8200402397 /* VisionKitService.swift in Sources */,
 				9DCDF65C282666A60072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF66628267A770072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF62828265A6B0072E726 /* UIColor+Hex.swift in Sources */,
@@ -798,6 +807,7 @@
 				9DCDF64028265B420072E726 /* AppSettings.swift in Sources */,
 				9DCDF64128265B420072E726 /* SceneDelegate.swift in Sources */,
 				9DCDF64328265B420072E726 /* ScanMeViewModel.swift in Sources */,
+				9DA053E628274F8200402397 /* VisionKitService.swift in Sources */,
 				9DCDF65D282666A70072E726 /* GoogleMLService.swift in Sources */,
 				9DCDF66728267A780072E726 /* ExpressionParser.swift in Sources */,
 				9DCDF64528265B420072E726 /* UIColor+Hex.swift in Sources */,
