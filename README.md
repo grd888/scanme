@@ -34,4 +34,4 @@ The project used the MVVM design pattern with Combine to separate logic from UI.
 
 #### **Modularity**
 
-The use of protocol interface achieves a certain amount of modularity such that the main logic is not dependent on the external services e.g. the OCR Service. For example we can replace Google ML Kit with another library without affecting the main logic.
+The use of protocol interface achieves a certain amount of modularity such that the main logic is not dependent on the external services e.g. the OCR Service. For example we can replace VisionKit with Google ML Kit without affecting the main logic.
