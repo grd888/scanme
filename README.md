@@ -6,6 +6,11 @@
 
 ### **Notes**
 
+#### **Cocoapods**
+
+This project uses Cocoapods version 1.11.3  
+Please run *pod install* after cloning.
+
 #### **OCR Libraries Used**
 
 For this project, two OCR libraries were implemented
