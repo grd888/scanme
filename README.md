@@ -1,6 +1,6 @@
 # Scan Me
 
-## Component Diagram
+## Component Dependency Diagram
 
 ![ScanMe](ScanMe.png)
 
