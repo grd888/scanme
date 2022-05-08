@@ -115,11 +115,11 @@
 		9D45A0892823DBD100E45744 /* ScanMeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewModel.swift; sourceTree = "<group>"; };
 		9D45A0912823FE3D00E45744 /* ScanMeComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeComposer.swift; sourceTree = "<group>"; };
 		9DCDF617282657E40072E726 /* ScanMeRedCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeRedCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeRedCameraInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeRedCameraInfo.plist; sourceTree = "<absolute>"; };
+		9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScanMeRedCameraInfo.plist; sourceTree = "<group>"; };
 		9DCDF63428265A6B0072E726 /* ScanMeGreenFile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenFile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenFileInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenFileInfo.plist; sourceTree = "<absolute>"; };
+		9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScanMeGreenFileInfo.plist; sourceTree = "<group>"; };
 		9DCDF65128265B420072E726 /* ScanMeGreenCameraRoll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMeGreenCameraRoll.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ScanMeGreenCameraRollInfo.plist; path = /Users/training1/Developer/projects/ScanMe/ScanMeGreenCameraRollInfo.plist; sourceTree = "<absolute>"; };
+		9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ScanMeGreenCameraRollInfo.plist; sourceTree = "<group>"; };
 		9DCDF654282663620072E726 /* TextExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtractor.swift; sourceTree = "<group>"; };
 		9DCDF6562826640F0072E726 /* GoogleMLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMLService.swift; sourceTree = "<group>"; };
 		9DCDF65F2826797E0072E726 /* ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParser.swift; sourceTree = "<group>"; };
