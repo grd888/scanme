@@ -12,13 +12,13 @@ import UIKit
 class ScanMeViewModel {
 
     var imagePublisher: AnyPublisher<UIImage?, Never> {
-        return imageObserver.eraseToAnyPublisher()
+        return imageSubject.eraseToAnyPublisher()
     }
     var resultPublisher: AnyPublisher<(expression: String, result: String), Never> {
         return resultSubject.eraseToAnyPublisher()
     }
     
-    private var imageObserver = CurrentValueSubject<UIImage?, Never>(nil)
+    private var imageSubject = PassthroughSubject<UIImage?, Never>()
     private var resultSubject = PassthroughSubject<(expression: String, result: String), Never>()
     private var subscriptions = Set<AnyCancellable>()
     
@@ -31,7 +31,7 @@ class ScanMeViewModel {
     }
     
     func processImage(_ image: UIImage) {
-        imageObserver.send(image)
+        imageSubject.send(image)
 
         textExtractor.extractText(from: image)
             .sink { [weak self] text in
