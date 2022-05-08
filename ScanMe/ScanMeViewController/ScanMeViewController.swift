@@ -71,21 +71,21 @@ class ScanMeViewController: UIViewController {
         case .camera:
             getImageFromCamera()
         case .cameraRoll:
-            getImageFromCaneraRoll()
+            getImageFromCameraRoll()
         }
     }
 }
 
-extension ScanMeViewController {
-    private func getImageFromFiles() {
+@objc extension ScanMeViewController {
+    func getImageFromFiles() {
         let documentsPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.image])
         documentsPicker.delegate = self
         documentsPicker.allowsMultipleSelection = false
         documentsPicker.modalPresentationStyle = .fullScreen
-        self.present(documentsPicker, animated: true, completion: nil)
+        present(documentsPicker, animated: true, completion: nil)
     }
     
-    private func getImageFromCamera() {
+    func getImageFromCamera() {
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             showAlert(title: "Error", message: "Your device does not seem to have a camera.")
             return
@@ -94,7 +94,7 @@ extension ScanMeViewController {
         present(imagePicker, animated: true)
     }
     
-    private func getImageFromCaneraRoll() {
+    func getImageFromCameraRoll() {
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true)
     }

@@ -4,6 +4,10 @@ platform :ios, '15.0'
 target 'ScanMe' do
   use_frameworks!
   pod 'GoogleMLKit/TextRecognition','2.2.0'
+  
+  target 'ScanMeTests' do
+    inherit! :search_paths
+  end
 end
 
 target 'ScanMeRedCamera' do

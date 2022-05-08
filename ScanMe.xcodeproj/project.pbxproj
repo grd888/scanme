@@ -17,7 +17,7 @@
 		9D45A0502822A21000E45744 /* ScanMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A04E2822A21000E45744 /* ScanMeViewController.storyboard */; };
 		9D45A0522822A21100E45744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0512822A21100E45744 /* Assets.xcassets */; };
 		9D45A0552822A21100E45744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D45A0532822A21100E45744 /* LaunchScreen.storyboard */; };
-		9D45A0602822A21200E45744 /* ScanMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A05F2822A21200E45744 /* ScanMeTests.swift */; };
+		9D45A0602822A21200E45744 /* ScanMeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A05F2822A21200E45744 /* ScanMeViewControllerTests.swift */; };
 		9D45A0792823392200E45744 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0782823392200E45744 /* AppSettings.swift */; };
 		9D45A07B2823403100E45744 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A07A2823403100E45744 /* UIColor+Hex.swift */; };
 		9D45A0862823560F00E45744 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D45A0852823560F00E45744 /* Bundle+Extension.swift */; };
@@ -81,6 +81,7 @@
 		9DCDF66C28267A800072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
 		9DCDF66D28267A800072E726 /* ExpressionParserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCDF66328267A550072E726 /* ExpressionParserService.swift */; };
 		AA972AF73C19AE13C06C09DA /* Pods_ScanMeRedCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B03A9634729C0E65B96FD6 /* Pods_ScanMeRedCamera.framework */; };
+		AD27D2E8F9F47D8C422EEBFE /* Pods_ScanMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC6961F74716DEF8C89FC791 /* Pods_ScanMeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,8 +101,10 @@
 		4C5F25078D6913F6E2C66162 /* Pods_ScanMeGreenCameraRoll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMeGreenCameraRoll.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		651694A154AD785A3153CA0E /* Pods-ScanMeGreenFile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMeGreenFile.release.xcconfig"; path = "Target Support Files/Pods-ScanMeGreenFile/Pods-ScanMeGreenFile.release.xcconfig"; sourceTree = "<group>"; };
 		7FA1F159F660E0EFB725D218 /* Pods-ScanMeRedCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMeRedCamera.debug.xcconfig"; path = "Target Support Files/Pods-ScanMeRedCamera/Pods-ScanMeRedCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		86DA41A1A361913D2F8363F1 /* Pods-ScanMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMeTests.release.xcconfig"; path = "Target Support Files/Pods-ScanMeTests/Pods-ScanMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D2E2D65E8ADBA88E26D587D /* Pods_ScanMeGreenFile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMeGreenFile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		922FDA991A6BE39BA4FA69BF /* Pods-ScanMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.debug.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.debug.xcconfig"; sourceTree = "<group>"; };
+		967443582393EA9FACE28D4C /* Pods-ScanMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMeTests.debug.xcconfig"; path = "Target Support Files/Pods-ScanMeTests/Pods-ScanMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96EE0564AB19B0BD41B65D04 /* Pods-ScanMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMe.release.xcconfig"; path = "Target Support Files/Pods-ScanMe/Pods-ScanMe.release.xcconfig"; sourceTree = "<group>"; };
 		9D45A0452822A21000E45744 /* ScanMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScanMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D45A0482822A21000E45744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,7 +115,7 @@
 		9D45A0542822A21100E45744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D45A0562822A21100E45744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D45A05B2822A21200E45744 /* ScanMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScanMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D45A05F2822A21200E45744 /* ScanMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeTests.swift; sourceTree = "<group>"; };
+		9D45A05F2822A21200E45744 /* ScanMeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanMeViewControllerTests.swift; sourceTree = "<group>"; };
 		9D45A0782823392200E45744 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		9D45A07A2823403100E45744 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		9D45A0852823560F00E45744 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		9DCDF66328267A550072E726 /* ExpressionParserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParserService.swift; sourceTree = "<group>"; };
 		9E4E71D28C0B71D1D1D14D7B /* Pods-ScanMeRedCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScanMeRedCamera.release.xcconfig"; path = "Target Support Files/Pods-ScanMeRedCamera/Pods-ScanMeRedCamera.release.xcconfig"; sourceTree = "<group>"; };
 		E8B03A9634729C0E65B96FD6 /* Pods_ScanMeRedCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMeRedCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC6961F74716DEF8C89FC791 /* Pods_ScanMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECEDFA26E7E71E13F6B2E123 /* Pods_ScanMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScanMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -149,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD27D2E8F9F47D8C422EEBFE /* Pods_ScanMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +225,7 @@
 		9D45A05E2822A21200E45744 /* ScanMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D45A05F2822A21200E45744 /* ScanMeTests.swift */,
+				9D45A05F2822A21200E45744 /* ScanMeViewControllerTests.swift */,
 			);
 			path = ScanMeTests;
 			sourceTree = "<group>";
@@ -289,6 +294,8 @@
 				651694A154AD785A3153CA0E /* Pods-ScanMeGreenFile.release.xcconfig */,
 				7FA1F159F660E0EFB725D218 /* Pods-ScanMeRedCamera.debug.xcconfig */,
 				9E4E71D28C0B71D1D1D14D7B /* Pods-ScanMeRedCamera.release.xcconfig */,
+				967443582393EA9FACE28D4C /* Pods-ScanMeTests.debug.xcconfig */,
+				86DA41A1A361913D2F8363F1 /* Pods-ScanMeTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -300,6 +307,7 @@
 				4C5F25078D6913F6E2C66162 /* Pods_ScanMeGreenCameraRoll.framework */,
 				8D2E2D65E8ADBA88E26D587D /* Pods_ScanMeGreenFile.framework */,
 				E8B03A9634729C0E65B96FD6 /* Pods_ScanMeRedCamera.framework */,
+				EC6961F74716DEF8C89FC791 /* Pods_ScanMeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -331,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D45A0722822A21200E45744 /* Build configuration list for PBXNativeTarget "ScanMeTests" */;
 			buildPhases = (
+				358FA83051D85FD1A585F0DE /* [CP] Check Pods Manifest.lock */,
 				9D45A0572822A21200E45744 /* Sources */,
 				9D45A0582822A21200E45744 /* Frameworks */,
 				9D45A0592822A21200E45744 /* Resources */,
@@ -497,6 +506,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		358FA83051D85FD1A585F0DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScanMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		387FCBDCF552A23774AA02FD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -749,7 +780,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D45A0602822A21200E45744 /* ScanMeTests.swift in Sources */,
+				9D45A0602822A21200E45744 /* ScanMeViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1036,6 +1067,7 @@
 		};
 		9D45A0732822A21200E45744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 967443582393EA9FACE28D4C /* Pods-ScanMeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1056,6 +1088,7 @@
 		};
 		9D45A0742822A21200E45744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86DA41A1A361913D2F8363F1 /* Pods-ScanMeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
