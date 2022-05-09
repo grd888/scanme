@@ -191,14 +191,14 @@
 		9D45A03C2822A21000E45744 = {
 			isa = PBXGroup;
 			children = (
+				9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */,
+				9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */,
+				9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */,
 				9D45A0472822A21000E45744 /* ScanMe */,
 				9D45A05E2822A21200E45744 /* ScanMeTests */,
 				9D45A0462822A21000E45744 /* Products */,
 				F1658C861A6BC5931CBEFD76 /* Pods */,
 				FDCA8BED15804F1048C0D2BE /* Frameworks */,
-				9DCDF618282657E40072E726 /* ScanMeRedCameraInfo.plist */,
-				9DCDF63528265A6C0072E726 /* ScanMeGreenFileInfo.plist */,
-				9DCDF65228265B420072E726 /* ScanMeGreenCameraRollInfo.plist */,
 			);
 			sourceTree = "<group>";
 		};
